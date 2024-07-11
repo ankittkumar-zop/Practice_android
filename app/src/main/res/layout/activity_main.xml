@@ -17,21 +17,21 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbarText"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:id="@+id/toolbarText"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
 
-        />
+<!--        />-->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/loginIdLabel"
-        android:text="Username:"
+        android:text="@string/username"
         android:padding="20dp"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
@@ -47,6 +47,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="213dp"
         android:hint="Enter username"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/loginIdLabel"
         app:layout_constraintStart_toStartOf="@+id/loginIdLabel"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -100,6 +101,8 @@
         android:layout_marginTop="25dp"
         android:textSize="15sp"
         />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
