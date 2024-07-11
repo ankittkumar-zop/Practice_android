@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.setTitle("Welcome")
 //        val toolbar = findViewById<Toolbar>(R.id.toolbar)
 ////        setSupportActionBar(toolbar)
 //        supportActionBar?.setDisplayShowTitleEnabled(true)
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             if ( username.isNotBlank() && password.isNotBlank() ){
                 val user = UserLoginInfo(username, password)
                 userLoginInfoList.add(user)
+                Toast.makeText(this, "Logged In successfully ", Toast.LENGTH_SHORT).show()
 
                 usernameEditText.text.clear()
                 passwordEditText.text.clear()
@@ -41,5 +44,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Enter details", Toast.LENGTH_SHORT).show()
             }
         }
+
+
     }
 }
