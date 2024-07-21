@@ -40,5 +40,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Enter details", Toast.LENGTH_SHORT).show()
             }
         }
+        Toast.makeText(this, "Enter details", Toast.LENGTH_SHORT).show()
+
     }
 }
