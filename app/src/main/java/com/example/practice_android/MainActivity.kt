@@ -1,11 +1,13 @@
 package com.example.practice_android
 
 import android.os.Bundle
+import android.view.WindowInsetsAnimation.Callback
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import retrofit2.Call
 
 data class UserLoginInfo(val userId: String , val password:String)
 
@@ -17,12 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
-        supportActionBar?.setTitle("Welcome")
-//        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-////        setSupportActionBar(toolbar)
-//        supportActionBar?.setDisplayShowTitleEnabled(true)
-//        supportActionBar?.title= "Welcome"
 
         val usernameEditText : EditText = findViewById(R.id.loginId)
         val passwordEditText : EditText = findViewById(R.id.passwordId)
@@ -44,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Enter details", Toast.LENGTH_SHORT).show()
             }
         }
-
+        Toast.makeText(this, "Enter details", Toast.LENGTH_SHORT).show()
 
     }
 }
